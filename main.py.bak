@@ -1,6 +1,6 @@
-from . import assembler
-from . import linker
-from . import loader
+import assembler
+import linker
+import loader
 
 error = "False"
 offset = 0
@@ -10,12 +10,12 @@ def process(filenames, offset):
 	error = "False"
 	assembler.convert(filenames)
 	if assembler.error != "False":
-		print((assembler.error, "assembler"))
+		print(assembler.error, "assembler")
 		error = assembler.error
 		return
 	linker.convert(filenames)
 	if linker.error != "False":
-		print((linker.error, "linker"))
+		print(linker.error, "linker")
 		error = linker.error
 		return
 	loader.convert(filenames[0], offset)

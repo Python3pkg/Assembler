@@ -1,4 +1,4 @@
-from . import assembler
+import assembler
 
 error = "False"
 startaddfile = {}

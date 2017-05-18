@@ -789,13 +789,13 @@ def convert(fileNames):
 			file.write(assc)
 			file.close()
 
-	print()
-	print("Symbol Table: ")
-	print(symtable)
-	print()
-	print("Opcode table: ")
-	print(optable)
-	print()
-	print("Global table: ")
-	print(globtable)
-	print()
+	print
+	print "Symbol Table: "
+	print symtable
+	print
+	print "Opcode table: "
+	print optable
+	print
+	print "Global table: "
+	print globtable
+	print
